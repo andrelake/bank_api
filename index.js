@@ -3,6 +3,8 @@ import express from 'express';
 
 import accRouter from './routes/account.js';
 
+global.fileName = 'accounts.json';
+
 const { readFile, writeFile } = fs;
 
 const app = express();
@@ -12,7 +14,7 @@ app.use('/account', accRouter);
 
 app.listen(3030, async () => {
   try {
-    await readFile('accounts.json');
+    await readFile(global.fileName);
     console.log('API started. File readed.');
   } catch (err) {
     const initialJson = {
@@ -20,7 +22,7 @@ app.listen(3030, async () => {
       accounts: [],
     };
 
-    writeFile('accounts.json', JSON.stringify(initialJson))
+    writeFile(global.fileName, JSON.stringify(initialJson))
       .then(() => {
         console.log('API started. File created.');
       })
