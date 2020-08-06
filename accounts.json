@@ -1,5 +1,5 @@
 {
-  "nextId": 6,
+  "nextId": 7,
   "accounts": [
     {
       "id": 1,
@@ -14,17 +14,17 @@
     {
       "id": 3,
       "name": "Pedro Lucio",
-      "balance": 1260.5
-    },
-    {
-      "id": 4,
-      "name": "Pedro Lucio",
-      "balance": 1260.5
+      "balance": 100.5
     },
     {
       "id": 5,
-      "name": "Carlos Eduardo",
-      "balance": 12.5
+      "name": "Mário Quintana",
+      "balance": 1111.51
+    },
+    {
+      "id": 6,
+      "name": "Mauro Silva",
+      "balance": 99.5
     }
   ]
 }
